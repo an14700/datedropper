@@ -574,8 +574,8 @@
 					}
 				}
 				
-				if(tempM<10) { if(tempM.length==2) tempM = tempM.substr(1); }
-				if(tempD<10) { if(tempD.length==2) tempD = tempD.substr(1); }
+				if(tempM!=null&&tempM<10) { if(tempM.length==2) tempM = tempM.substr(1); }
+				if(tempD!=null&&tempD<10) { if(tempD.length==2) tempD = tempD.substr(1); }
 				
 				if(tempD==null) tempD = dd_d_current;
 				if(tempM==null) tempM = dd_m_current;
