@@ -759,9 +759,15 @@
 
 		// SWITCH INTERFACE //
 		
-		switch(settings.format) {
-			case 'Y': dd_m.hide();dd_d.hide(); break;
-			case 'm': dd_y.hide();dd_y_r.hide();dd_d.hide(); break;
+		dd_y.hide();dd_m.hide();dd_d.hide();
+		if (settings.format.indexOf("Y") > -1) {
+			dd_y.show();
+		} 
+		if (settings.format.indexOf("m") > -1) {
+			dd_m.show();
+		} 
+		if (settings.format.indexOf("d") > -1) {
+			dd_d.show();
 		}
 		
 		// DECLARE CALC FUNCTIONS //
